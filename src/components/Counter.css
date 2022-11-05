@@ -30,11 +30,15 @@
     padding: 20px;
 
 }
+.section-wrapp p {
+  
+   font-size: 2em;
+}
 .section {
     border: 1px solid black;
     height: 75%;
     width: 21%;
-    margin-top: 30px;
+    margin-top: 45px;
     background-color: #D4D3D2;
     border: none;
     margin-left: 30px;
@@ -44,7 +48,7 @@
 
 #textarea{
     width: 350px;
-    height: 40vh;
+    height: 37vh;
     border-radius: 10px 10px 10px 10px;
     background-color: #D4D3D2;
     border: none;
@@ -61,11 +65,52 @@
 
 .main{
     display: flex;
-    align-items: baseline;
+    align-items: baseline!important;
     justify-content: center;
-    margin-top: 15px;
+
+}
+.btn{
+    border:none
+} 
+
+@media (max-width: 1000px){
+    #textarea{
+        width: 180px;
+        height: 20vh
+    }
+    .section{
+        height: 50%;
+        width: 25%;
+        margin-bottom: 100px;
+      
+    }
+   
+   .section-wrapp p{
+    font-size: 0.6em;
+   }
+   .section h6{
+    font-size: 0.6em;
+   }
 }
 
-/* .btn{
-    border:none
-} */
+
+@media (max-width: 1100px){
+    #textarea{
+        width: 200px;
+        height: 20vh
+    }
+    .section{
+        height: 60%;
+        width: 40%;
+        margin-bottom: 100px;
+      
+    }
+   
+   .section-wrapp p{
+    font-size: 0.7em;
+   }
+   .section h6{
+    font-size: 0.8em;
+   } 
+
+}
