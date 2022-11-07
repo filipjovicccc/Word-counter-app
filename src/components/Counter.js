@@ -10,7 +10,7 @@ function Counter() {
   const inputChangeHandler = (event) => {
     if (event.target.value) {
       const characters = event.target.value.replaceAll(" ", "").trim();
-    
+
       setCharacterCounter(characters.length);
     }
 
@@ -38,7 +38,6 @@ function Counter() {
 
       <div className="main">
         <textarea
-          // onKeyUp={deleteWithBackspace}
           onChange={inputChangeHandler}
           placeholder="Enter text here"
           id="textarea"
