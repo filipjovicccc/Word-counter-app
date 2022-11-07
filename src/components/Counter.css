@@ -8,11 +8,10 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 76%;
-    height: 470px;
+    max-width: 860px;
     margin: 0 auto;
     margin-top: 50px;
-    justify-content: center!important;
+    justify-content: center;
 
    
 }
@@ -36,7 +35,7 @@
 }
 .section {
     border: 1px solid black;
-    height: 77%;
+    height: 330px;
     width: 21%;
     margin-top: 45px;
     background-color: #D4D3D2;
@@ -65,7 +64,7 @@
 
 .main{
     display: flex;
-    align-items: baseline!important;
+    align-items: baseline;
     justify-content: center;
 
 }
@@ -73,14 +72,34 @@
     border:none
 } 
 
+@media (max-width: 1100px){
+   #textarea{
+       width: 300px;
+       height: 20vh
+   }
+   .section{
+       height: 270px;
+       width: 24%;
+       margin-bottom: 100px;
+     
+   }
+  
+  .section-wrapp p{
+   font-size: 0.7em;
+  }
+  .section h6{
+   font-size: 0.8em;
+  }  
+
+} 
 @media (max-width: 1000px){
     #textarea{
-        width: 180px;
-        height: 20vh
+        width: 280px;
+        height: 18vh
     }
     .section{
-        height: 50%;
-        width: 25%;
+        height: 260px;
+        width: 20%;
         margin-bottom: 100px;
       
     }
@@ -94,23 +113,52 @@
 }
 
 
- @media (max-width: 1100px){
+
+@media(max-width: 700px){
     #textarea{
-        width: 200px;
-        height: 20vh
+        width: 230px;
+        height: 15vh
     }
     .section{
-        height: 60%;
-        width: 40%;
+        height: 170px;
+        width: 17%;
         margin-bottom: 100px;
       
     }
    
    .section-wrapp p{
-    font-size: 0.7em;
+    font-size: 0.5em;
    }
    .section h6{
-    font-size: 0.8em;
+    font-size: 0.5em;
    }  
  
-} 
+}
+
+@media(max-width: 450px){
+    #textarea{
+        width: 150px;
+        height: 15vh
+    }
+    .section{
+        height: 150px;
+        width: 14%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        
+      
+    }
+   
+   .section-wrapp p{
+    font-size: 0.3em;
+    margin-bottom: 50px;
+    height: 50px
+   
+ 
+   }
+   .section h6{
+    font-size: 0.4em;
+   }  
+ 
+}
