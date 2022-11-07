@@ -10,7 +10,7 @@ function Counter() {
   const inputChangeHandler = (event) => {
     if (event.target.value) {
       const characters = event.target.value.replaceAll(" ", "").trim();
-      console.log(characters);
+    
       setCharacterCounter(characters.length);
     }
 
