@@ -6,12 +6,14 @@
 }
 .wrapper{
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0.318);
     max-width: 860px;
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
+    padding: 10px;
 
    
 }
@@ -20,145 +22,75 @@
     font-weight: 400;
 }
 
-.section-wrapp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    height: 100px;
-    padding: 20px;
-
-}
-.section-wrapp p {
-  
-   font-size: 2em;
-}
 .section {
     border: 1px solid black;
-    height: 330px;
+    height: 250px;
     width: 21%;
-    margin-top: 45px;
     background-color: #D4D3D2;
     border: none;
-    margin-left: 30px;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 60px;
+    padding: 40px;
     
+}
+.section p {
+    font-size: 2em;
 }
 
 #textarea{
     width: 350px;
-    height: 37vh;
+    height: 250px;
     border-radius: 10px 10px 10px 10px;
     background-color: #D4D3D2;
     border: none;
-    margin-bottom: 50px;
+    display:flex;
+   
+  
 }
-
 .header{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
-    margin-top: 50px;
-   
-}
-
-.main{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
 
 }
+
 .btn{
     border:none
 } 
 
-@media (max-width: 1100px){
-   #textarea{
-       width: 300px;
-       height: 20vh
-   }
-   .section{
-       height: 270px;
-       width: 24%;
-       margin-bottom: 100px;
-     
-   }
-  
-  .section-wrapp p{
-   font-size: 0.7em;
-  }
-  .section h6{
-   font-size: 0.8em;
-  }  
-
-} 
-@media (max-width: 1000px){
-    #textarea{
-        width: 280px;
-        height: 18vh
-    }
-    .section{
-        height: 260px;
-        width: 20%;
-        margin-bottom: 100px;
-      
-    }
-   
-   .section-wrapp p{
-    font-size: 0.6em;
-   }
-   .section h6{
-    font-size: 0.6em;
-   }
-}
-
-
 
 @media(max-width: 700px){
-    #textarea{
-        width: 230px;
-        height: 15vh
-    }
-    .section{
-        height: 170px;
-        width: 17%;
-        margin-bottom: 100px;
-      
-    }
-   
-   .section-wrapp p{
-    font-size: 0.5em;
-   }
-   .section h6{
-    font-size: 0.5em;
-   }  
- 
-}
 
-@media(max-width: 450px){
-    #textarea{
-        width: 150px;
-        height: 15vh
-    }
-    .section{
-        height: 150px;
-        width: 14%;
-        margin-bottom: 100px;
-        display: flex;
+ .wrapper{
         flex-direction: column;
-        
-      
-    }
-   
-   .section-wrapp p{
-    font-size: 0.3em;
-    margin-bottom: 50px;
-    height: 50px
-   
+        align-items: center;
+       }
  
-   }
-   .section h6{
-    font-size: 0.4em;
-   }  
+  .section {
  
-}
+    width: 350px;
+    margin-right: 58px;
+    margin-top: 34px;
+    
+      } 
+ 
+} 
+@media(max-width: 550px){
+   
+#textarea{
+    width: 145px;
+ }
+ .section {
+ 
+    width:  145px;
+    font-size: 0.7em;
+    padding: 30px;
+ 
+    
+     
+
+  } 
+}  

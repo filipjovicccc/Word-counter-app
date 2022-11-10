@@ -36,25 +36,19 @@ function Counter() {
         </button>
       </div>
 
-      <div className="main">
-        <textarea
-          onChange={inputChangeHandler}
-          placeholder="Enter text here"
-          id="textarea"
-          ref={inputRef}
-        ></textarea>
+      <textarea
+        onChange={inputChangeHandler}
+        placeholder="Enter text here"
+        id="textarea"
+        ref={inputRef}
+      ></textarea>
 
-        <div className="section">
-          <div className="section-wrapp">
-            <h6>Words:</h6>
-            <p>{wordCounter}</p>
-          </div>
+      <div className="section">
+        <h6>Words:</h6>
+        <p>{wordCounter}</p>
 
-          <div className="section-wrapp">
-            <h6>Characters:</h6>
-            <p>{characterCounter}</p>
-          </div>
-        </div>
+        <h6>Characters:</h6>
+        <p>{characterCounter}</p>
       </div>
     </div>
   );
