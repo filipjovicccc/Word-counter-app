@@ -7,14 +7,17 @@ function Counter() {
   const [wordCounter, setWordCounter] = useState(0);
   const inputRef = useRef();
 
-  const inputChangeHandler = (event) => {
-    if (event.target.value) {
-      const characters = event.target.value.replaceAll(" ", "").trim();
+  const inputChangeHandler = () => {
+    const characters = inputRef.current.value.replace(/\s/g, "");
 
-      setCharacterCounter(characters.length);
-    }
+    setCharacterCounter(characters.length);
 
-    const inputChange = inputRef.current.value.trim().split(" ");
+    const inputChange = inputRef.current.value
+      .trim()
+      .split(" ")
+      .filter((item) => {
+        return item != "";
+      });
 
     setWordCounter(inputChange.length);
   };
